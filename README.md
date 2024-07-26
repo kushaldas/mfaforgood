@@ -1,6 +1,9 @@
-# Multi factor authentication in Django
+# Multi-factor authentication in Django
 
-This is an example project show casing how to enable Multi factor authentication (MFA) in a Django web application.
+This is an example project show casing how to enable [Multi-factor
+authentication (MFA)](https://en.wikipedia.org/wiki/Multi-factor_authentication) in a Django
+web application. One can use TOTP based phone applications or hardware token
+(say Yubikey) for this example project.
 
 
 ## Install / Usage
