@@ -1,0 +1,4 @@
+django
+git+https://github.com/peppelinux/django-mfa3@mfa_session
+
+

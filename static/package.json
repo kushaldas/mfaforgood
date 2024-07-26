@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cbor-js": "^0.1.0"
+  }
+}

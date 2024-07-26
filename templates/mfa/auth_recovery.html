@@ -1,0 +1,27 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+
+<h1>Two-factor authentication</h1>
+
+<p>
+    <strong>WARNING</strong>:
+    The recovery code will be removed after it has been used.
+    Make sure to create a new one after login!
+</p>
+
+<form method="POST">
+    {% csrf_token %}
+    {% for error in form.non_field_errors %}
+    <p>{{ error }}</p>
+    {% endfor %}
+    <label>
+        {{ form.code.label }}
+        {{ form.code }}
+    </label>
+    <button>Verify</button>
+    <a href="{% url 'mfa:auth' 'FIDO2' %}">Use FIDO2 instead</a>
+    <a href="{% url 'mfa:auth' 'TOTP' %}">Use TOTP instead</a>
+</form>
+
+{% endblock %}
