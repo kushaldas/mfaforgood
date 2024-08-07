@@ -14,7 +14,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ./manage.py migrate
 ./manage.py createsuperuser
-./manage.py runuser
+./manage.py runserver
 ```
 
 Then visit the [home page](http://localhost:8000/).
